@@ -17,6 +17,7 @@ pytest==7.4.3
 pytest-base-url==2.0.0
 pytest-playwright==0.4.3
 pytest-reporter==0.5.2
+pytest-html==4.1.1
 python-slugify==8.0.1
 requests==2.31.0
 text-unidecode==1.3
