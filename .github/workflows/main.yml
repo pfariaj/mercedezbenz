@@ -21,9 +21,9 @@ jobs:
     - name: Ensure browsers are installed
       run: python -m playwright install --with-deps
     - name: Run your tests
-      run: pytest -s -v --html=pwreport1.html
+      run: pytest -s -v --html=test-results/report.html
     - uses: actions/upload-artifact@v3
       if: always()
       with:
-        name: playwright-traces
+        name: report
         path: test-results/
