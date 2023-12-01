@@ -2,7 +2,7 @@ from playwright.sync_api import Page, Playwright, sync_playwright, expect
 
 
 def test_enquire_hightest_price(playwright: Playwright) -> None:
-    browser = playwright.chromium.launch(headless=False, slow_mo=50)
+    browser = playwright.chromium.launch(headless=True, slow_mo=50)
     context = browser.new_context()
     page = context.new_page()
 
