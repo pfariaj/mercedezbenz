@@ -23,7 +23,8 @@ jobs:
     - name: Run your tests
       run: pytest -s -v --html=reports/pwreport1.html
     - name: Upload test results
-    - uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v3
+      if: always()
       with:
         name: pytest-results
         path: reports/pwreport1.html
