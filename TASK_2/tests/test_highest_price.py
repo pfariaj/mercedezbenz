@@ -7,7 +7,7 @@ def test_enquire_hightest_price(playwright: Playwright) -> None:
     page = context.new_page()
 
     page.goto("https://shop.mercedes-benz.com/en-au/shop/vehicle/srp/demo")
-    page.get_by_role("button", name="Agree to all")
+    page.get_by_role("button", name="Agree to all").click()
 
     page.get_by_label("* Your state").select_option("New South Wales")
     page.locator("[data-test-id=\"modal-popup__location\"]").get_by_label("", exact=True).fill("2007")
