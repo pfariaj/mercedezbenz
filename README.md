@@ -16,8 +16,8 @@ This project demonstrates the use of Playwright with Python to validate the nega
 1. Clone the repository to your local machine:
 
 ```bash
-git clone https://github.com/yourusername/mercedes-price-enquiry-validator.git
-cd mercedes-price-enquiry-validator
+git clone https://github.com/pfariaj/mercedezbenz.git
+cd mercedezbenz
 ```
 
 1. Install the required Python packages using requirements.txt:
